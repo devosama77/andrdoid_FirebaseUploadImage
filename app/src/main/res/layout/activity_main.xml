@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Title"
+    android:id="@+id/title_id"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:id="@+id/desc_id"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/image_button"
+        android:onClick="addImage"/>
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendTitle"/>
+    <Button
+        android:text="show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showPosts"/>
+
+</LinearLayout>
